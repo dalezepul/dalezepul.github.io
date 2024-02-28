@@ -116,7 +116,7 @@
         list2Element.classList.add("card");
 
         if (differencesList1.length > 0) {
-          list1Element.innerHTML += "<strong>Farklar (Liste 1):</strong><ul>";
+          list1Element.innerHTML += "<strong>Liste 1'de bulunan, ancak Liste 2'de yer almayanlar:</strong><ul>";
           differencesList1.forEach((item) => {
             list1Element.innerHTML += "<li>" + item + "</li>";
           });
@@ -126,7 +126,7 @@
         }
 
         if (differencesList2.length > 0) {
-          list2Element.innerHTML += "<strong>Farklar (Liste 2):</strong><ul>";
+          list2Element.innerHTML += "<strong>Liste 2'de bulunan, ancak Liste 1'de yer almayanlar:</strong><ul>";
           differencesList2.forEach((item) => {
             list2Element.innerHTML += "<li>" + item + "</li>";
           });
