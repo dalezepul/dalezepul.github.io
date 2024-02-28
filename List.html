@@ -26,7 +26,18 @@
       textarea {
         resize: vertical;
         overflow: auto;
-        background-color: rgba(255, 255, 255, 0.3) !important;
+        background-color: rgba(123, 123, 123, 0.6) !important;
+        color: white !important;
+      }
+      canvas {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+      }
+      li{
+        color: white;
+      }
+      ::placeholder {
         color: white !important;
       }
       .myContainer {
@@ -38,12 +49,6 @@
         margin: 0 auto;
         z-index: 1;
       }
-      canvas {
-        width: 100%;
-        position: absolute;
-        z-index: -1;
-      }
-
       .btn-dark {
         background-color: rgb(10, 10, 10);
         border: black;
@@ -51,7 +56,7 @@
       .card {
         margin: 10px;
         padding: 10px;
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(123, 123, 123, 0.6);
         border-color: white;
         border-radius: 10px;
         color: aqua;
@@ -64,7 +69,7 @@
         <label for="list1">Liste 1:</label>
         <textarea
           id="list1"
-          placeholder="Örneğin: 1, 2, 3"
+          placeholder="Örneğin:&#10;1&#10;2&#10;3"
           rows="6"
           class="form-control"
         ></textarea>
@@ -72,7 +77,7 @@
         <label for="list2">Liste 2:</label>
         <textarea
           id="list2"
-          placeholder="Örneğin: 2, 3, 4"
+          placeholder="Örneğin:&#10;2&#10;3&#10;4"
           rows="6"
           class="form-control"
         ></textarea>
@@ -146,16 +151,16 @@
 
       var mouse = { x: 0, y: 0 };
 
-      var numMetaballs = 30;
+      var numMetaballs = 15;
       var metaballs = [];
 
       for (var i = 0; i < numMetaballs; i++) {
-        var radius = Math.random() * 60 + 10;
+        var radius = Math.random() * 60 + 40;
         metaballs.push({
           x: Math.random() * (width - 2 * radius) + radius,
           y: Math.random() * (height - 2 * radius) + radius,
-          vx: (Math.random() - 0.5) * 3,
-          vy: (Math.random() - 0.5) * 3,
+          vx: (Math.random() - 0.5) * 1,
+          vy: (Math.random() - 0.5) * 1,
           r: radius * 0.75,
         });
       }
