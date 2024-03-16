@@ -96,6 +96,12 @@ a {
 @media only screen and (max-width: 1200px) {
     .card {
         width: calc(90vw - 2rem);
-        margin: 1rem; 
+        margin: 1rem 5rem; 
+        padding: 4rem 2rem;
+        font-size: 2em;
+    }
+    #zepul,
+    #redirect{
+        font-size: 9em;
     }
 }
