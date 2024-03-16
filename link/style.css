@@ -95,16 +95,20 @@ a {
 @media only screen and (max-width: 1200px) {
     .card {
         width: calc(90vw - 2rem);
-        margin: 1rem 5rem; 
-        padding: 4rem 2rem;
-        font-size: 3em;
+        margin: 1rem 3rem; 
+        padding: 2rem 2rem;
+        font-size: 2em;
         border-radius: 2rem;
     }
     #zepul,
     #redirect{
-        font-size: 9em;
+        font-size: 8em;
+        margin: 0 3rem;
     }
     .btn{
         border: solid 2px #00ffff66;
+    }
+    img{
+        scale: 1.5;
     }
 }
