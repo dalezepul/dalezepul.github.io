@@ -103,7 +103,7 @@ a {
     #zepul,
     #redirect{
         font-size: 8em;
-        margin: 0 3rem;
+        margin: 0 3rem 10rem;
     }
     .btn{
         border: solid 2px #00ffff66;
