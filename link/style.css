@@ -97,7 +97,8 @@ a {
         width: calc(90vw - 2rem);
         margin: 1rem 5rem; 
         padding: 4rem 2rem;
-        font-size: 2em;
+        font-size: 3em;
+        border-radius: 2rem;
     }
     #zepul,
     #redirect{
