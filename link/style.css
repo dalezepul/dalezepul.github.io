@@ -16,17 +16,21 @@ a {
     text-decoration: none;
 }
 
-#zepul{
+
+#zepul,
+#redirect{
     text-align: center;
     font-size: 100px;
     margin-top: 3rem;
 }
 
 
+
 .container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 12rem;
 }
 
 .card{
@@ -86,6 +90,7 @@ a {
         margin-right: 1rem;
     }
 }
+
 
 /* Küçük ekranlar için stil */
 @media only screen and (max-width: 1200px) {
